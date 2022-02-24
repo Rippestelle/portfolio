@@ -27,6 +27,8 @@ body {
   line-height: 1.5;
   margin: 0;
   background-color: #121212;
+  display: flex;
+  flex-wrap: wrap;
 }
 #app {
   -webkit-font-smoothing: antialiased;
@@ -51,7 +53,7 @@ nav a.router-link-exact-active {
   box-sizing: border-box;
 }
 a {
-  color: #000;
+  color: #838f9c;
   text-decoration: none;
 }
 h1,

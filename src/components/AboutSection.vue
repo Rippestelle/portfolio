@@ -15,7 +15,17 @@ export default {
 </script>
 
 <style scoped>
-h2 {
+.about h2 {
   text-align: left;
+}
+
+.about {
+  width: 100%;
+}
+
+.about p {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
 }
 </style>

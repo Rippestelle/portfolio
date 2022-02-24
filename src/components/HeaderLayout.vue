@@ -34,16 +34,29 @@ export default {
 
 <style>
 .header {
-  background: url("@/assets/bg3.png") no-repeat center center fixed;
+  background: url("@/assets/bg3.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
-  min-width: 1024px;
   width: 100%;
   height: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 840px) {
+  .header {
+  background: url("@/assets/bg3.png") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  }
 }
 
 .text-container {
@@ -66,6 +79,12 @@ export default {
 }
 .second-part {
   font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav a {

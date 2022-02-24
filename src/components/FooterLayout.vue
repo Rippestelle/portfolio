@@ -1,13 +1,32 @@
 <template>
   <footer class="footer">
-    <nav class="footer-nav">
-        <ul class="footer-nav__list">
-          <h3> Contact</h3>
-            <li class="footer-nav__list__item">Accueil</li>
-            <li class="footer-nav__list__item">Projets</li>
-            <li class="footer-nav__list__item">Formation</li>
+    <!--<nav class="footer-nav">
+      <div class="nav-section">
+        <h3>Contact</h3>
+        <ul class="nav-section__list">
+          <li class="nav-section__list__item">estelle.rippe.pro@gmail.com</li>
+          <li class="nav-section__list__item">LinkedIn</li>
         </ul>
-    </nav>
+      </div>
+      <div class="nav-section">
+        <h3>Infos</h3>
+        <ul class="nav-section__list">
+          <li class="nav-section__list__item">Mentions Légales</li>
+          <li class="nav-section__list__item">Projets</li>
+        </ul>
+      </div>
+      <div class="nav-section">
+        <h3>Contact</h3>
+        <ul class="nav-section__list">
+          <li class="nav-section__list__item">Accueil</li>
+          <li class="nav-section__list__item">Projets</li>
+          <li class="nav-section__list__item">Formation</li>
+        </ul>
+      </div>
+    </nav>-->
+    <div>
+      <p>&copy; 2022 | Estelle Rippe | <a>Mentions Légales</a></p>
+    </div>
   </footer>
 </template>
 

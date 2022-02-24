@@ -4,7 +4,6 @@
     <TechnoCursus />
     <ProjectsList />
     <ContactForm />
-    <FooterLayout />
   </main>
 </template>
 
@@ -28,3 +27,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+</style>
