@@ -95,6 +95,7 @@
     <div class="skills">
       <h3>Skills:</h3>
       <div class="skills__list">
+        <div class="skills__list__block">
         <ul>
           <li>Intégration</li>
           <li>POO</li>
@@ -107,6 +108,8 @@
           <li>WordPress Custom</li>
           <li>SEO - Visibilité</li>
         </ul>
+        </div>
+        <div class="skills__list__block">
         <ul>
           <li>Rédaction Cahier des Charges</li>
           <li>Méthodes Agiles</li>
@@ -119,6 +122,7 @@
           <li>Rédaction et Créativité</li>
           <li>Autonome et Organisée</li>
         </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -194,20 +198,28 @@ img {
 .skills__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-@media screen and (max-width: 1183px) {
+
+@media screen and (min-width: 683px) {
   .skills__list {
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 }
 
-ul {
-  list-style-type: circle;
+.skills ul {
+  list-style: none;
   text-align: left;
 }
 
+.skills li::before {
+  content: "\25E6"; 
+  color:#22d49e;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em
+}
 .grade__list__item {
   border: solid 1px #22d49e;
   border-radius: 5px;

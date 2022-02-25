@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderLayout />
+    <ThemeButton />
     <router-view />
     <FooterLayout />
   </div>
@@ -8,13 +9,50 @@
 
 <script>
 import HeaderLayout from "@/components/HeaderLayout.vue";
+import ThemeButton from '@/components/ThemeButton.vue';
 import FooterLayout from "@/components/FooterLayout.vue";
+
 
 export default {
   name: "App",
   components: {
     HeaderLayout,
+    ThemeButton,
     FooterLayout
+  },
+  mounted() {
+  const initUserTheme = this.getMediaPreference();
+  this.setTheme(initUserTheme);
+  },
+  data() {
+    return {
+      userTheme: "light-theme",
+    };
+  },
+  methods: {
+    setTheme(theme) {
+    localStorage.setItem("user-theme", theme);
+    this.userTheme = theme;
+    document.documentElement.className = theme;
+  },
+  toggleTheme() {
+  const activeTheme = localStorage.getItem("user-theme");
+  if (activeTheme === "light-theme") {
+    this.setTheme("dark-theme");
+  } else {
+    this.setTheme("light-theme");
+  }
+},
+getMediaPreference() {
+  const hasDarkPreference = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  if (hasDarkPreference) {
+    return "dark-theme";
+  } else {
+    return "light-theme";
+  }
+}
   }
 }
 </script>
@@ -26,7 +64,6 @@ body {
   font-family: "Montserrat";
   line-height: 1.5;
   margin: 0;
-  background-color: #121212;
   display: flex;
   flex-wrap: wrap;
 }
@@ -73,4 +110,26 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Define styles for the default root window element */
+:root {
+  --background-color-primary: #121212;
+  --background-color-secondary: #121212;
+  --accent-color: #cacaca;
+  --text-primary-color: #fff;
+  --element-size: 4rem;
+}
+
+/* Define styles for the root window with dark - mode preference */
+:root.light-theme {
+  --background-color-primary: #fff;
+  --background-color-secondary: #fff;
+  --accent-color: #fff;
+  --text-primary-color: #fff;
+}
+
+#app {
+    background-color: var(--background-color-primary);
+}
+
 </style>

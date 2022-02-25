@@ -37,7 +37,7 @@
 
       <a href="#">
         <div class="card">
-          <img src="@/assets/1.png" />
+          <img src="@/assets/qs.png" />
           <div class="card__inner">
             <h2>Cordonnerie Serrurerie</h2>
             <p>Premier site professionnel réalisé en 2022, pour une Cordonnerie - Serrurerie située à Angoulême. Le client souhaitait garder son positionnement et mettre en avant ses services. Veille concurrentielle, mise en avant du contenu et SEO.</p>

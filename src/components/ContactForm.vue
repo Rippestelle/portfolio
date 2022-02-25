@@ -62,17 +62,17 @@ export default {
         title: "Votre email a bien été envoyé !",
         icon: "success",
         buttons: {
-          confirm: { text: "Ok"},
+          confirm: { text: "Ok" },
         },
-        confirmButtonColor: '#22d49e',
+        confirmButtonColor: "#22d49e",
       });
     },
     error() {
       Swal.fire({
         title: "Merci de remplir tous les champs: Nom, Email et Message",
         icon: "error",
-        buttons: { confirm: { text: "Ok"} },
-        confirmButtonColor: '#22d49e'
+        buttons: { confirm: { text: "Ok" } },
+        confirmButtonColor: "#22d49e",
       });
     },
     showAlert() {
@@ -80,12 +80,12 @@ export default {
       let email = document.getElementById("email");
       let message = document.getElementById("message");
 
-        if (name.value == "" || email.value == "" || message.value == "") {
-          this.error();
-        } else if(name.value !="" || email.value !="" || message.value != ""){
-          this.sendEmail()
-          this.success();
-        }
+      if (name.value == "" || email.value == "" || message.value == "") {
+        this.error();
+      } else if (name.value != "" || email.value != "" || message.value != "") {
+        this.sendEmail();
+        this.success();
+      }
     },
   },
 };

@@ -34,7 +34,7 @@ export default {
 
 <style>
 .header {
-  background: url("@/assets/bg3.png") no-repeat center center;
+  background: url("@/assets/bg.png") no-repeat center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
@@ -47,7 +47,7 @@ export default {
 
 @media screen and (min-width: 840px) {
   .header {
-  background: url("@/assets/bg3.png") no-repeat center center fixed;
+  background: url("@/assets/bg.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
@@ -66,6 +66,11 @@ export default {
   font-size: x-large;
   color: #121212;
 }
+
+:root.light-theme.h1 {
+  color: var(--text-color-primary);
+}
+
 
 .header-main {
   display: flex;

@@ -24,6 +24,7 @@ export default {
   },
   methods: {
     sendEmail() {},
+    showAlert() {},
   }
 }
 </script>
