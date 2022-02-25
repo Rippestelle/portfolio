@@ -1,5 +1,5 @@
 <template>
-  <div class="techno">
+  <div class="techno" id="techno">
     <h2>&lt; Technologies &amp; Compétences /&gt;</h2>
     <p>Voici une liste des Technologies que je maîtrise:</p>
     <div class="techno__list">
@@ -74,7 +74,7 @@
       />
     </div>
   </div>
-  <div class="infos">
+  <div class="infos" id="infos">
     <div class="grade">
       <h3>Certifications:</h3>
       <div class="grade__list">

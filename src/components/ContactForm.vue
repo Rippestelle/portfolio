@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact" id="contact">
     <h2>&lt; Me Contacter /&gt;</h2>
     <form class="form" ref="form" @submit.prevent="sendEmail">
       <label>Nom</label>
@@ -108,7 +108,9 @@ export default {
   width: 100%;
   align-self: center;
   border-radius: 20px;
-  height: 2.5em;
+  height: 2em;
+  border: #22d49e 1px solid;
+  padding: 1em;
 }
 
 .form {
@@ -121,13 +123,16 @@ export default {
   border-radius: 15px;
   padding-top: 1.5em;
   width: 80%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .form textarea {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   border-radius: 20px;
   padding: 0.7em;
+  border: #22d49e 1px solid;
 }
 
 .form-submit input {
@@ -137,7 +142,7 @@ export default {
   padding-bottom: 0.5em;
   margin: 1em;
   outline: none;
-  background: #121212;
+  background: var(--background-color-primary);
   color: #22d49e;
   font-size: 22px;
   border: #22d49e 1px solid;

@@ -65,7 +65,7 @@ export default {
 .theme-btn {
   padding-inline-start: 1em;
   padding-inline-end: 1em;
-  margin-left: 1em;
+  margin-left: 3em;
 }
 
 .switch-checkbox {
@@ -74,8 +74,7 @@ export default {
 
 .switch-label {
   align-items: center;
-  background: var(--text-primary-color);
-  border: calc(var(--element-size) * 0.025) solid var(--accent-color);
+  background: var(--background-color-secondary);
   border-radius: var(--element-size);
   cursor: pointer;
   display: flex;
@@ -94,8 +93,8 @@ export default {
   background-color: var(--background-color-primary);
   border-radius: 50%;
   left: calc(var(--element-size) * 0.02);
-  height: calc(var(--element-size) * 0.5);
-  width: calc(var(--element-size) * 0.5);
+  height: calc(var(--element-size) * 0.45);
+  width: calc(var(--element-size) * 0.45);
   transform: translateX(0);
   transition: transform 0.3s ease, background-color 0.5s ease;
 }
@@ -103,5 +102,13 @@ export default {
 
 .switch-toggle-checked {
   transform: translateX(calc(var(--element-size) * 0.5)) !important;
+}
+
+.dark-icon {
+  color: #22d49e;
+}
+
+.light-icon {
+    color: #22d49e;
 }
 </style>

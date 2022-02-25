@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects" id="projects">
     <h2>&lt; Mes Projets /&gt;</h2>
     <div class="projects__list">
       <a href="https://ozart.go.yj.fr/">

@@ -1,19 +1,30 @@
 <template>
   <header class="header">
-    <div class="header-main">
+    <div class="header-main fade-in">
       <h1 class="text-container">
         Bonjour,<br />
         Je suis <span class="first-part"> {{ title }},</span>
         <span class="second-part">Développeuse Web.</span>
       </h1>
+      <div class="downArrow bounce">
+        <a href="#nav" class="arrow-down"><i class="fa-solid fa-angles-down"></i></a>
+      </div>
     </div>
   </header>
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <ul class="nav__list">
-      <li class="nav__list__item"><a href="#"  class="nav__list__item__link">A propos</a></li>
-      <li class="nav__list__item"><a href="#"  class="nav__list__item__link">Formation</a></li>
-      <li class="nav__list__item"><a href="#"  class="nav__list__item__link">Projets</a></li>
-      <li class="nav__list__item"><a href="#"  class="nav__list__item__link">Contact</a></li>
+      <li class="nav__list__item">
+        <a href="#about" class="nav__list__item__link">A propos</a>
+      </li>
+      <li class="nav__list__item">
+        <a href="#techno" class="nav__list__item__link">Compétences</a>
+      </li>
+      <li class="nav__list__item">
+        <a href="#projects" class="nav__list__item__link">Projets</a>
+      </li>
+      <li class="nav__list__item">
+        <a href="#contact" class="nav__list__item__link">Contact</a>
+      </li>
     </ul>
   </nav>
 </template>
@@ -47,15 +58,15 @@ export default {
 
 @media screen and (min-width: 840px) {
   .header {
-  background: url("@/assets/bg.png") no-repeat center center fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+    background: url("@/assets/bg.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -64,22 +75,19 @@ export default {
   flex-direction: column;
   justify-content: center;
   font-size: x-large;
-  color: #121212;
+  color: var(--title-secondary-color);
 }
-
-:root.light-theme.h1 {
-  color: var(--text-color-primary);
-}
-
 
 .header-main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 1em;
 }
 
 .first-part {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: xx-large;
 }
 .second-part {
@@ -107,4 +115,76 @@ export default {
 .nav__list__item {
   text-transform: uppercase;
 }
+
+.arrow-down {
+  color: var(--title-secondary-color);
+  font-size: xx-large;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
 </style>

@@ -15,14 +15,12 @@ export default {
 
 <style>
 .footer {
-  background-color: #121212;
   width: 100%;
-  box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.2);
   bottom: 0;
 }
 
 .block {
-  font-weight: 700;
+  font-weight: 500;
   font-size: larger;
 }
 </style>

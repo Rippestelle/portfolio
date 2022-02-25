@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" id="about">
     <h2>&lt;	Hey Stranger /&gt;</h2>
     <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget efficitur risus. Sed nec sem et eros semper malesuada. Aenean tempor dictum tincidunt. Quisque pharetra enim nec mi facilisis rhoncus. Pellentesque condimentum ornare mattis. Nam at augue felis. Fusce tincidunt velit a lectus porta, ut porta sapien congue. Aenean tincidunt lectus et convallis tristique. Duis porta ornare urna elementum venenatis. Curabitur quis augue tellus.
