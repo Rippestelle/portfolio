@@ -1,29 +1,6 @@
 <template>
   <footer class="footer">
-    <!--<nav class="footer-nav">
-      <div class="nav-section">
-        <h3>Contact</h3>
-        <ul class="nav-section__list">
-          <li class="nav-section__list__item">estelle.rippe.pro@gmail.com</li>
-          <li class="nav-section__list__item">LinkedIn</li>
-        </ul>
-      </div>
-      <div class="nav-section">
-        <h3>Infos</h3>
-        <ul class="nav-section__list">
-          <li class="nav-section__list__item">Mentions Légales</li>
-          <li class="nav-section__list__item">Projets</li>
-        </ul>
-      </div>
-      <div class="nav-section">
-        <h3>Contact</h3>
-        <ul class="nav-section__list">
-          <li class="nav-section__list__item">Accueil</li>
-          <li class="nav-section__list__item">Projets</li>
-          <li class="nav-section__list__item">Formation</li>
-        </ul>
-      </div>
-    </nav>-->
+    <p class="block">&#9888; Site en cours de construction &#9888;</p>
     <div>
       <p>&copy; 2022 | Estelle Rippe | <a>Mentions Légales</a></p>
     </div>
@@ -44,14 +21,8 @@ export default {
   bottom: 0;
 }
 
-.footer-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-}
-
-.footer-nav__list {
-    list-style-type: none;
+.block {
+  font-weight: 700;
+  font-size: larger;
 }
 </style>

@@ -69,8 +69,6 @@ h2 {
   }
 
 .main-container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto;

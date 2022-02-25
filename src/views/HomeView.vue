@@ -14,9 +14,6 @@ import ProjectsList from '@/components/ProjectsList.vue';
 import ContactForm from '@/components/ContactForm.vue';
 import TechnoCursus from '@/components/TechnoCursus.vue';
 
-
-
-
 export default {
   name: 'HomeView',
   components: {
@@ -24,6 +21,9 @@ export default {
     TechnoCursus,
     ProjectsList,
     ContactForm
+  },
+  methods: {
+    sendEmail() {},
   }
 }
 </script>

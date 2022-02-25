@@ -1,78 +1,133 @@
 <template>
   <div class="contact">
     <h2>&lt; Me Contacter /&gt;</h2>
-    <form action="" method="" class="form">
-      <div class="form-example">
-        <label for="name">Nom </label>
-        <input type="text" name="name" id="name" required />
-      </div>
-      <div class="form-example">
-        <label for="email">Email </label>
-        <input type="email" name="email" id="email" required />
-      </div>
-      <div class="form-message">
-        <label for="email">Message </label>
-        <input type="message" name="message" id="message" required />
-      </div>
+    <form class="form" ref="form" @submit.prevent="sendEmail">
+      <label>Nom</label>
+      <input
+        type="text"
+        v-model="name"
+        name="name"
+        placeholder="Votre Nom"
+        class="form-input"
+        id="name"
+      />
+      <label>Email</label>
+      <input
+        type="email"
+        v-model="email"
+        name="email"
+        placeholder="Votre Email"
+        class="form-input"
+        id="email"
+      />
+      <label>Message</label>
+      <textarea
+        name="message"
+        v-model="message"
+        cols="30"
+        rows="10"
+        placeholder="Votre Message"
+        id="message"
+      >
+      </textarea>
       <div class="form-submit">
-        <input type="submit" value="Envoyer" />
+        <input
+          type="submit"
+          value="Envoyer"
+          class="submit"
+          v-on:click="showAlert"
+        />
       </div>
     </form>
   </div>
 </template>
 
 <script>
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 export default {
   name: "ContactForm",
+  methods: {
+    sendEmail() {
+      emailjs.sendForm(
+        "service_qrnj3jj",
+        "template_rig8f3m",
+        this.$refs.form,
+        "user_0R2dYz1spFvrq7Cspxv9V"
+      );
+    },
+    success() {
+      Swal.fire({
+        title: "Votre email a bien été envoyé !",
+        icon: "success",
+        buttons: {
+          confirm: { text: "Ok"},
+        },
+        confirmButtonColor: '#22d49e',
+      });
+    },
+    error() {
+      Swal.fire({
+        title: "Merci de remplir tous les champs: Nom, Email et Message",
+        icon: "error",
+        buttons: { confirm: { text: "Ok"} },
+        confirmButtonColor: '#22d49e'
+      });
+    },
+    showAlert() {
+      let name = document.getElementById("name");
+      let email = document.getElementById("email");
+      let message = document.getElementById("message");
+
+        if (name.value == "" || email.value == "" || message.value == "") {
+          this.error();
+        } else if(name.value !="" || email.value !="" || message.value != ""){
+          this.sendEmail()
+          this.success();
+        }
+    },
+  },
 };
 </script>
 
 <style scoped>
 .contact {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact h2 {
-  text-align: left;
+  align-self: flex-start;
+}
+
+.form-input {
+  max-width: 400px;
+  width: 100%;
+  align-self: center;
+  border-radius: 20px;
+  height: 2.5em;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: #22d49e 1px solid;
+  border-radius: 15px;
+  padding-top: 1.5em;
+  width: 80%;
 }
 
-.form-example {
-  padding: 1em;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 100%;
-}
-
-#name {
-  width: 100%;
-}
-
-#email {
-  width: 100%;
-}
-
-.form-message {
+.form textarea {
   max-width: 800px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
   width: 100%;
-}
-
-#message {
-  width: 100%;
-  min-height: 150px;
-  outline: none;
-  resize: none;
+  border-radius: 20px;
+  padding: 0.7em;
 }
 
 .form-submit input {
@@ -92,5 +147,10 @@ export default {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+
+.swal2-styled.swal2-confirm {
+  color: #22d49e;
+  background-color: #22d49e;
 }
 </style>
