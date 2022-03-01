@@ -1,10 +1,10 @@
 <template>
   <div class="about" id="about">
     <h2>&lt;	Hey Stranger /&gt;</h2>
-    <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget efficitur risus. Sed nec sem et eros semper malesuada. Aenean tempor dictum tincidunt. Quisque pharetra enim nec mi facilisis rhoncus. Pellentesque condimentum ornare mattis. Nam at augue felis. Fusce tincidunt velit a lectus porta, ut porta sapien congue. Aenean tincidunt lectus et convallis tristique. Duis porta ornare urna elementum venenatis. Curabitur quis augue tellus.
-
-Nullam a felis ut ante egestas egestas nec ut nunc. Donec euismod leo ac nunc volutpat, quis dapibus eros finibus. Quisque ut nibh non turpis sagittis interdum. Fusce suscipit, lectus ac imperdiet auctor, magna sem hendrerit erat, non ultricies lacus ante imperdiet erat. Praesent eu massa sit amet ex sagittis pellentesque et id urna. Etiam volutpat purus vel nunc vestibulum, ut molestie ante tempus. Phasellus ullamcorper vehicula felis. Aenean tempus ligula non sagittis cursus. Maecenas velit nunc, pulvinar vel pharetra ac, volutpat id tellus. Nam auctor pellentesque lobortis. Vivamus semper sagittis erat in laoreet. Praesent rhoncus ante est, eu pellentesque nunc lacinia sed. Vivamus vel finibus purus.</p>
+    <h3>Moi c'est <a href="https://www.linkedin.com/in/estelle-rippe/">Estelle</a>, je suis Développeuse Web.</h3>
+    <p>Issue de formation Littéraire, j'ai changé de voie professionnelle et effectué le grand plongeon dans le domaine du Développement Web début 2021. De janvier à juillet 2021,  <strong><a href="https://oclock.io/">l'école O'clock</a></strong> m'a guidé dans les méandres de la programmation web et m'a fourni de solides bases pour faire mes premiers pas en tant que Développeuse Web. J' ai découvert divers langages tels que HTML, CSS, JavaScript, PHP ou encore SQL puis je me suis spécialisée avec le CMS WordPress et le framework Vue.js.</p>
+    <p>Après la formation, j'ai effectué un stage de deux mois, obtenu mon Titre Professionnel de Développeuse Web et Web Mobile en Septembre 2021 et passé quelques certifications complémentaires afin de monter en compétences et de comprendre tous les enjeux pour la création et la qualité d'un projet web.</p>
+    <p>Aujourd'hui, je recherche un poste afin de gagner de l'expérience entre la Bretagne et la Loire-Atlantique (ou n'importe où en full-remote!) et je propose en attendant mes services pour la création de site internet.</p>
   </div>
 </template>
 
@@ -19,13 +19,16 @@ export default {
   text-align: left;
 }
 
+.about h3 {
+  text-transform: initial;
+  text-align: left;
+  font-weight: 550;
+}
 .about {
   width: 100%;
 }
 
 .about p {
-  display: flex;
-  flex-wrap: wrap;
   text-align: justify;
 }
 </style>

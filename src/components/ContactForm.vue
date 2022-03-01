@@ -1,7 +1,7 @@
 <template>
   <div class="contact" id="contact">
     <h2>&lt; Me Contacter /&gt;</h2>
-    <form class="form" ref="form" @submit.prevent="sendEmail">
+    <form class="form" ref="form" @submit.prevent="sendEmail" id="form">
       <label>Nom</label>
       <input
         type="text"
@@ -49,32 +49,6 @@ import Swal from "sweetalert2";
 export default {
   name: "ContactForm",
   methods: {
-    sendEmail() {
-      emailjs.sendForm(
-        "service_qrnj3jj",
-        "template_rig8f3m",
-        this.$refs.form,
-        "user_0R2dYz1spFvrq7Cspxv9V"
-      );
-    },
-    success() {
-      Swal.fire({
-        title: "Votre email a bien été envoyé !",
-        icon: "success",
-        buttons: {
-          confirm: { text: "Ok" },
-        },
-        confirmButtonColor: "#22d49e",
-      });
-    },
-    error() {
-      Swal.fire({
-        title: "Merci de remplir tous les champs: Nom, Email et Message",
-        icon: "error",
-        buttons: { confirm: { text: "Ok" } },
-        confirmButtonColor: "#22d49e",
-      });
-    },
     showAlert() {
       let name = document.getElementById("name");
       let email = document.getElementById("email");
@@ -83,10 +57,40 @@ export default {
       if (name.value == "" || email.value == "" || message.value == "") {
         this.error();
       } else if (name.value != "" || email.value != "" || message.value != "") {
-        this.sendEmail();
+        this.sendEmail(name.value, email.value, message.value);
         this.success();
+       // Reset form field
+        document.getElementById("form").reset();
       }
     },
+    sendEmail(name, email, message) {
+      emailjs.sendForm(
+        "service_qrnj3jj",
+        "template_rig8f3m",
+        this.$refs.form,
+        "user_0R2dYz1spFvrq7Cspxv9V", {
+          from_name: name,
+          email: email,
+          message: message
+        }
+      );
+    },
+    success() {
+      Swal.fire({
+        title: "Votre email a bien été envoyé !",
+        icon: "success",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "#22d49e",
+      });
+    },
+    error() {
+      Swal.fire({
+        title: "Merci de remplir tous les champs: Nom, Email et Message",
+        icon: "error",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "#22d49e",
+      });
+    }
   },
 };
 </script>
@@ -148,7 +152,24 @@ export default {
   border: #22d49e 1px solid;
   border-radius: 40px;
   text-align: center;
-  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.form-submit input:hover {
+  padding-inline-start: 1em;
+  padding-inline-end: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 1em;
+  outline: none;
+  background: #22d49e;
+  color: var(--background-color-primary);
+  font-size: 22px;
+  border: var(--background-color-primary) 1px solid;
+  border-radius: 40px;
+  text-align: center;
   position: relative;
   overflow: hidden;
   cursor: pointer;

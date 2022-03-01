@@ -3,7 +3,7 @@
     <div class="header-main fade-in">
       <h1 class="text-container">
         Bonjour,<br />
-        Je suis <span class="first-part"> {{ title }},</span>
+        Je suis <span class="first-part"> {{ title }}</span> 
         <span class="second-part">Développeuse Web.</span>
       </h1>
       <div class="downArrow bounce">
@@ -76,6 +76,7 @@ export default {
   justify-content: center;
   font-size: x-large;
   color: var(--title-secondary-color);
+  font-family: 'Source Code Pro', monospace;
 }
 
 .header-main {
@@ -87,8 +88,8 @@ export default {
 }
 
 .first-part {
-  font-family: "Source Code Pro", monospace;
-  font-size: xx-large;
+  font-family: 'Monofett', cursive;
+  font-size: xxx-large;
 }
 .second-part {
   font-weight: 700;
