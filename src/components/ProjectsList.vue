@@ -103,7 +103,7 @@ h2 {
   right: 0px;
   z-index: 1;
   opacity: 0;
-  padding: 2rem 1.3rem 2rem 2rem;
+  padding: 1rem;
   transition: all 0.4s ease 0s;
 }
 

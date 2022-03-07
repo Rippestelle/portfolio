@@ -4,7 +4,7 @@
       <h1 class="text-container">
         Bonjour,<br />
         Je suis <span class="first-part"> {{ title }}</span> 
-        <span class="second-part">Développeuse Web.</span>
+        <span class="second-part">Développeuse Web</span>
       </h1>
       <div class="downArrow bounce">
         <a href="#nav" class="arrow-down"><i class="fa-solid fa-angles-down"></i></a>
@@ -36,7 +36,7 @@ export default {
   data() {
     // La méthode data() doit retourner un objet
     return {
-      title: "Estelle",
+      title: "E s t e l l e",
       isActionsVisible: false,
     };
   },
@@ -88,7 +88,16 @@ export default {
 }
 
 .first-part {
-  font-family: 'Monofett', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Cutive Mono', monospace;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Red Hat Mono', monospace;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Syne Mono', monospace;
+font-family: 'Monofett', cursive;
   font-size: xxx-large;
 }
 .second-part {

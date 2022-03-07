@@ -2,76 +2,41 @@
   <div class="techno" id="techno">
     <h2>&lt; Technologies &amp; Compétences /&gt;</h2>
     <p>Voici une liste des Technologies que je maîtrise:</p>
+
     <div class="techno__list">
-      <img
-        src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-      />
-      <br />
-      <img
-        src="https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-      />
-      <img
-        src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"
-      />
-      <img
-        src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
-      /><img
-        src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/-Jasmine-%238A4182?style=for-the-badge&logo=Jasmine&logoColor=whit"
-      />
-      <img
-        src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-      />
+      <h3>HTML5</h3>
+      <h3>CSS3</h3>
+      <h3>Bootstrap</h3>
+      <h3>PHP</h3>
+      <h3>JavaScript</h3>
+      <h3>SQL</h3>
+      <h3>Wordpress</h3>
+      <h3>Laravel</h3>
+      <h3>Vue.js</h3>
+      <h3>Node.js</h3>
+      <h3>JQuery</h3>
+      <h3>MySQL</h3>
+      <h3>Git</h3>
+      <h3>Amazon AWS</h3>
+      <h3>Vue.js</h3>
     </div>
+
     <p>Celles que je suis en train d'apprendre:</p>
     <div class="techno__list">
-      <img
-        src="https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"
-      />
+      <h3>TypeScript</h3>
+      <h3>Angular</h3>
+      <h3>Jasmine</h3>
+      <h3>MongoDB</h3>
     </div>
+
     <p>Et celles que je souhaite découvrir dans un futur proche:</p>
-      <div class="techno__list">
-        <img
-        src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-      />
-      <img
-        src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-      />
-      <img
-        src="https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white"
-      />
+    <div class="techno__list">
+      <h3>C++</h3>
+      <h3>Python</h3>
+      <h3>Gatsby</h3>
+      <h3>React</h3>
+      <h3>Symfony</h3>
+      <h3>Svelte</h3>
     </div>
   </div>
   <div class="infos" id="infos">
@@ -96,32 +61,32 @@
       <h3>Skills:</h3>
       <div class="skills__list">
         <div class="skills__list__block">
-        <ul>
-          <li>Intégration</li>
-          <li>POO</li>
-          <li>MVC</li>
-          <li>Base de données relationnelle</li>
-        </ul>
-        <ul>
-          <li>Adapatabilité et Ergonomie</li>
-          <li>Front-end / Back-end</li>
-          <li>WordPress Custom</li>
-          <li>SEO - Visibilité</li>
-        </ul>
+          <ul>
+            <li>Intégration</li>
+            <li>POO</li>
+            <li>MVC</li>
+            <li>Base de données relationnelle</li>
+          </ul>
+          <ul>
+            <li>Adapatabilité et Ergonomie</li>
+            <li>Front-end / Back-end</li>
+            <li>WordPress Custom</li>
+            <li>SEO - Visibilité</li>
+          </ul>
         </div>
         <div class="skills__list__block">
-        <ul>
-          <li>Rédaction Cahier des Charges</li>
-          <li>Méthodes Agiles</li>
-          <li>Veille Technologique et Concurentielle</li>
-          <li>Responsive Design</li>
-        </ul>
-        <ul>
-          <li>Sens du relationnel</li>
-          <li>Bonne communication</li>
-          <li>Rédaction et Créativité</li>
-          <li>Autonome et Organisée</li>
-        </ul>
+          <ul>
+            <li>Rédaction Cahier des Charges</li>
+            <li>Méthodes Agiles</li>
+            <li>Veille Technologique et Concurentielle</li>
+            <li>Responsive Design</li>
+          </ul>
+          <ul>
+            <li>Sens du relationnel</li>
+            <li>Bonne communication</li>
+            <li>Rédaction et Créativité</li>
+            <li>Autonome et Organisée</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -135,7 +100,6 @@ export default {
 </script>
 
 <style scoped>
-
 .techno {
   width: 100%;
   width: 100%;
@@ -144,20 +108,29 @@ export default {
   align-items: center;
 }
 
- .techno__list {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 80%;
- }
- 
+.techno__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
 .techno p {
   font-weight: 700;
   font-size: larger;
 }
 .techno h2 {
   align-self: flex-start;
+}
+
+.techno h3 {
+  text-transform: none;
+  padding: 10px;
+  border: 1px solid #22d49e;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: small;
 }
 
 .infos {
@@ -168,9 +141,6 @@ export default {
   color: #22d49e;
 }
 
-img {
-  margin: 5px;
-}
 .infos {
   display: flex;
   flex-direction: column;
@@ -201,7 +171,6 @@ img {
   justify-content: flex-start;
 }
 
-
 @media screen and (min-width: 683px) {
   .skills__list {
     justify-content: space-evenly;
@@ -214,11 +183,11 @@ img {
 }
 
 .skills li::before {
-  content: "\25E6"; 
-  color:#22d49e;
-  display: inline-block; 
+  content: "\25E6";
+  color: #22d49e;
+  display: inline-block;
   width: 1em;
-  margin-left: -1em
+  margin-left: -1em;
 }
 .grade__list__item {
   border: solid 1px #22d49e;
