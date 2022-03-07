@@ -24,7 +24,7 @@ export default {
           '<h3>1. Présentation du site</h3>' +
           '<p>Propriétaire: Estelle RIPPE</p>' +
           '<p>Créateur: Estelle RIPPE</p>' +
-          '<p>Hébergeur:</p>' +
+          '<p>Hébergeur: https://www.netlify.com/</p>' +
           '<h3>2. Description des services fournis.</h3>' +
           '<p>Le site a pour objet de fournir une information concernant l\'ensemble d\'une activité. <br>Tous les informations indiquées sur le site sont données à titre indicatif, et sont susceptibles d\'évoluer. Par ailleurs, les renseignements figurant sur le site ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p>' +
           '<h3>3. Conditions générales d\'utilisation du site et des services proposés</h3>' +

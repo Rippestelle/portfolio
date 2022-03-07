@@ -87,19 +87,6 @@ export default {
   padding-top: 1em;
 }
 
-.first-part {
-font-family: 'Audiowide', cursive;
-font-family: 'Cutive Mono', monospace;
-font-family: 'JetBrains Mono', monospace;
-font-family: 'Major Mono Display', monospace;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Red Hat Mono', monospace;
-font-family: 'Share Tech Mono', monospace;
-font-family: 'Source Code Pro', monospace;
-font-family: 'Syne Mono', monospace;
-font-family: 'Monofett', cursive;
-  font-size: xxx-large;
-}
 .second-part {
   font-weight: 700;
 }
