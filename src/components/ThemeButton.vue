@@ -66,6 +66,7 @@ export default {
   padding-inline-start: 1em;
   padding-inline-end: 1em;
   margin-left: 3em;
+  padding-top: 1em;
 }
 
 .switch-checkbox {

@@ -45,7 +45,7 @@ export default {
 
 <style>
 .header {
-  background: url("@/assets/bg.png") no-repeat center center fixed;
+  background: url("@/assets/bg.png") no-repeat center center;
   background-size: cover;
   min-height: 100%;
   max-width: 100%;
