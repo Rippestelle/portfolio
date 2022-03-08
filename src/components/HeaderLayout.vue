@@ -48,7 +48,7 @@ export default {
   background: url("@/assets/bg.png") no-repeat center center fixed;
   background-size: cover;
   min-height: 100%;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   height: 100vh;
   display: flex;
@@ -60,7 +60,7 @@ export default {
     background: url("@/assets/bg.png") no-repeat center center fixed;
     background-size: cover;
     min-height: 100%;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     height: 100vh;
     display: flex;
@@ -72,7 +72,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: x-large;
+  font-size: 3.8vh;
   color: var(--title-secondary-color);
   font-family: 'Source Code Pro', monospace;
 }
@@ -87,12 +87,6 @@ export default {
 
 .second-part {
   font-weight: 700;
-}
-
-@media screen and (max-width: 640px) {
-  .nav {
-    display: none;
-  }
 }
 
 .nav a {
@@ -111,9 +105,21 @@ export default {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 640px) {
+  nav {
+    display: none;
+  }
+  .nav__list__item {
+    display: none;
+  }
+    .nav__list {
+    display: none;
+  }
+}
+
 .arrow-down {
   color: var(--title-secondary-color);
-  font-size: xx-large;
+  font-size: 4.5vh;
 }
 .bounce {
   -moz-animation: bounce 3s infinite;

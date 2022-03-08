@@ -43,7 +43,7 @@ export default {
 
 <style>
 .footer {
-  width: 100%;
+  max-width: 100%;
   bottom: 0;
 }
 

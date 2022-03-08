@@ -84,7 +84,7 @@ h2 {
 
 .card {
   position: relative;
-  width: 500px;
+  max-width: 500px;
   height: 300px;
   background-size: cover;
   background-color: black;

@@ -60,7 +60,7 @@ getMediaPreference() {
 <style>
 html,
 body {
-  font-size: 15px;
+  font-size: 100%;
   font-family: "Montserrat";
   line-height: 1.5;
   margin: 0;
@@ -106,7 +106,7 @@ h2 {
   }
 
 .main-container {
-  width: 90%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }

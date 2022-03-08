@@ -101,8 +101,7 @@ export default {
 
 <style scoped>
 .techno {
-  width: 100%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,7 +112,7 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  max-width: 80%;
 }
 
 .techno p {
@@ -130,11 +129,10 @@ export default {
   border: 1px solid #22d49e;
   border-radius: 5px;
   margin: 5px;
-  font-size: small;
 }
 
 .infos {
-  width: 100%;
+  max-width: 100%;
 }
 
 .infos h3 {
@@ -193,5 +191,6 @@ export default {
   border: solid 1px #22d49e;
   border-radius: 5px;
   padding: 2em;
+  margin: 1em;
 }
 </style>
