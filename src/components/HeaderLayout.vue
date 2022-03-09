@@ -7,7 +7,7 @@
         <span class="second-part">Développeuse Web</span>
       </h1>
       <div class="downArrow bounce">
-        <a href="#nav" class="arrow-down"><i class="fa-solid fa-angles-down"></i></a>
+        <a href="#about" class="arrow-down"><i class="fa-solid fa-angles-down"></i></a>
       </div>
     </div>
   </header>

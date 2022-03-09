@@ -116,7 +116,7 @@ h2 {
 }
 
 .card__inner p {
-  overflow-y: scroll;
+  overflow-x: scroll;
   height: 87%;
   padding-right: 1rem;
   font-weight: 200;
