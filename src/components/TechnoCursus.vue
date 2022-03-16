@@ -317,7 +317,6 @@ export default {
 
 <style scoped>
 .techno {
-  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,7 +327,7 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .techno__list div {
@@ -382,6 +381,14 @@ export default {
 .grade ul {
   list-style-type: none;
   text-align: left;
+}
+
+.grade li::before {
+  content: "\25E6";
+  color: #22d49e;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .skills__list {
