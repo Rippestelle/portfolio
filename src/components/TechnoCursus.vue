@@ -1,44 +1,260 @@
 <template>
   <div class="techno" id="techno">
     <h2>&lt; Technologies &amp; Compétences /&gt;</h2>
-    <p>Voici une liste des Technologies que je maîtrise:</p>
 
+    <p>Voici une liste des Technologies que je maîtrise:</p>
     <div class="techno__list">
-      <h3>HTML5</h3>
-      <h3>CSS3</h3>
-      <h3>Bootstrap</h3>
-      <h3>PHP</h3>
-      <h3>JavaScript</h3>
-      <h3>SQL</h3>
-      <h3>Wordpress</h3>
-      <h3>Laravel</h3>
-      <h3>Vue.js</h3>
-      <h3>Node.js</h3>
-      <h3>JQuery</h3>
-      <h3>MySQL</h3>
-      <h3>Git</h3>
-      <h3>Amazon AWS</h3>
-      <h3>Vue.js</h3>
+      <div>
+        <h3>HTML5</h3>
+        <img
+          src="@/assets/html5-without-wordmark-color.svg"
+          alt="html"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>CSS3</h3>
+        <img
+          src="@/assets/css-3-seeklogo.com.svg"
+          alt="css"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Bootstrap</h3>
+        <img
+          src="@/assets/bootstrap-seeklogo.com.svg"
+          alt="mysql"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>PHP</h3>
+        <img
+          src="@/assets/php-seeklogo.com.svg"
+          alt="php"
+          class="techno__list__item"
+          width="80"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>JavaScript</h3>
+        <img
+          src="@/assets/javascript-js-seeklogo.com.svg"
+          alt="javascript"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>MySQL</h3>
+        <img
+          src="@/assets/mysql-seeklogo.com.svg"
+          alt="mysql"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Wordpress</h3>
+        <img
+          src="@/assets/wordpress-seeklogo.com.svg"
+          alt="wordpress"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Laravel</h3>
+        <img
+          src="@/assets/laravel-seeklogo.com.svg"
+          alt="laravel"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Vue.js</h3>
+        <img
+          src="@/assets/vuejs-seeklogo.com.svg"
+          alt="vuejs"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Node.js</h3>
+        <img
+          src="@/assets/nodejs-seeklogo.com.svg"
+          alt="nodejs"
+          class="techno__list__item"
+          width="80"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>JQuery</h3>
+        <img
+          src="@/assets/jquery-seeklogo.com.svg"
+          alt="jquery"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Ionic</h3>
+        <img
+          src="@/assets/ionic-seeklogo.com.svg"
+          alt="jquery"
+          class="techno__list__item"
+          width="80"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Git</h3>
+        <img
+          src="@/assets/git-seeklogo.com.svg"
+          alt="git"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Amazon AWS</h3>
+        <img
+          src="@/assets/aws-seeklogo.com.svg"
+          alt="aws"
+          class="techno__list__item"
+          width="80"
+          height="60"
+        />
+      </div>
     </div>
 
     <p>Celles que je suis en train d'apprendre:</p>
     <div class="techno__list">
-      <h3>TypeScript</h3>
-      <h3>Angular</h3>
-      <h3>Jasmine</h3>
-      <h3>MongoDB</h3>
+      <div>
+        <h3>TypeScript</h3>
+        <img
+          src="@/assets/typescript-seeklogo.com.svg"
+          alt="typescript"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Angular</h3>
+        <img
+          src="@/assets/angular-seeklogo.com.svg"
+          alt="angular"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Jasmine</h3>
+        <img
+          src="@/assets/jasmine-seeklogo.com.svg"
+          alt="jasmine"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>MongoDB</h3>
+        <img
+          src="@/assets/mongodb-seeklogo.com.svg"
+          alt="mongodb"
+          class="techno__list__item"
+          width="80"
+          height="60"
+        />
+      </div>
     </div>
 
     <p>Et celles que je souhaite découvrir dans un futur proche:</p>
     <div class="techno__list">
-      <h3>C++</h3>
-      <h3>Python</h3>
-      <h3>Gatsby</h3>
-      <h3>React</h3>
-      <h3>Symfony</h3>
-      <h3>Svelte</h3>
+      <div>
+        <h3>C++</h3>
+        <img
+          src="@/assets/c-seeklogo.com.svg"
+          alt="c++"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Python</h3>
+        <img
+          src="@/assets/python-seeklogo.com.svg"
+          alt="python"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Gatsby</h3>
+        <img
+          src="@/assets/gatsby-seeklogo.com.svg"
+          alt="gatsby"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>React</h3>
+        <img
+          src="@/assets/react-seeklogo.com.svg"
+          alt="react"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Symfony</h3>
+        <img
+          src="@/assets/symfony-seeklogo.com.svg"
+          alt="symfony"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
+        <h3>Svelte</h3>
+        <img
+          src="@/assets/svelte-seeklogo.com.svg"
+          alt="svelte"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
     </div>
   </div>
+
   <div class="infos" id="infos">
     <div class="grade">
       <h3>Certifications:</h3>
@@ -101,7 +317,7 @@ export default {
 
 <style scoped>
 .techno {
-  max-width: 100%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,9 +328,16 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 80%;
+  max-width: 100%;
 }
 
+.techno__list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+}
 .techno p {
   font-weight: 700;
   font-size: larger;
@@ -124,15 +347,13 @@ export default {
 }
 
 .techno h3 {
-  text-transform: none;
   padding: 10px;
-  border: 1px solid #22d49e;
-  border-radius: 5px;
   margin: 5px;
+  font-size: small;
 }
 
 .infos {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .infos h3 {
@@ -169,7 +390,7 @@ export default {
   justify-content: flex-start;
 }
 
-@media screen and (min-width: 683px) {
+@media screen and (min-width: 780px) {
   .skills__list {
     justify-content: space-evenly;
   }

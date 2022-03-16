@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      userTheme: "light-theme",
+      userTheme: "dark-theme",
     };
   },
   methods: {
@@ -37,10 +37,10 @@ export default {
   },
   toggleTheme() {
   const activeTheme = localStorage.getItem("user-theme");
-  if (activeTheme === "light-theme") {
-    this.setTheme("dark-theme");
-  } else {
+  if (activeTheme === "dark-theme") {
     this.setTheme("light-theme");
+  } else {
+    this.setTheme("dark-theme");
   }
 },
 getMediaPreference() {

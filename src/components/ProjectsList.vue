@@ -7,7 +7,7 @@
           <img src="@/assets/ozartt.png" />
           <div class="card__inner">
             <h2>Projet de fin d'études</h2>
-            <p>Pour ce projet de fin d'étude réalisé au sein d'une équipe de cinq étudiants/développeurs en méthode Agile (Scrum), nous avons utilisé WordPress et personnalisé le contenu avec un plugin et un thème maison. Ce projet a été ensuite retravaillé avec un thème enfant.</p>
+            <p>Pour ce projet de fin d'études - réalisé au sein d'une équipe de cinq étudiants/développeurs en méthode Agile (Scrum) - nous avons utilisé WordPress et personnalisé le contenu avec la création d'un plugin et d'un thème maison. Ce projet a été ensuite retravaillé avec un thème enfant.</p>
           </div>
         </div>
         <h3>Oz'Art</h3>
@@ -18,7 +18,7 @@
           <img src="@/assets/lb.png" />
           <div class="card__inner">
             <h2>Le Guide de l'Herboriste</h2>
-            <p>Voici un projet d'entraînement réalisé avec une camarade de Promo dans le but de continuer à pratiquer après notre formation. Full WordPress avec Custom Post Type et Taxonomies et thème enfant.</p>
+            <p>Voici un projet d'entraînement réalisé avec une camarade de Promo dans le but de continuer à pratiquer après notre formation. Full WordPress avec création de plugin (Custom Post Type et Taxonomies) et thème enfant.</p>
           </div>
         </div>
         <h3>Leaf &amp; Bloom</h3>
@@ -29,7 +29,7 @@
           <img src="@/assets/prime.png" />
           <div class="card__inner">
             <h2>Projet de stage</h2>
-            <p>Au cours de mon stage j'ai participé à la conception d'une application de génération de contenu grâce à une intelligence artificielle (via l'API d'Open AI). J'ai travaillé sur la partie front-end et effectué une veille concurrentiel.</p>
+            <p>Au cours de mon stage j'ai participé à la conception d'une application de génération de contenu grâce à une intelligence artificielle (via l'API d'Open AI). J'ai travaillé sur la partie front-end et effectué une veille concurrentielle.</p>
           </div>
         </div>
         <h3>Prime Copy (Stage)</h3>

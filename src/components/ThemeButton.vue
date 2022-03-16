@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-btn">
+  <div class="theme-btn" id="theme-btn">
     <input
       @change="toggleTheme"
       id="checkbox"
