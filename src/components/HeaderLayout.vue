@@ -85,6 +85,10 @@ export default {
   padding-top: 1em;
 }
 
+.first-part {
+  font-family: 'Permanent Marker', cursive;
+}
+
 .second-part {
   font-weight: 700;
 }

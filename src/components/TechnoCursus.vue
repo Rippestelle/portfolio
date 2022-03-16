@@ -307,6 +307,10 @@
       </div>
     </div>
   </div>
+
+  <div class="curriculum">
+    <h4>Pour voir mon CV c'est <a href="https://drive.google.com/file/d/1B1o2ASMaVgv38M973BN23KC9NMdsxdbh/view?usp=sharing">ici</a></h4>
+  </div>
 </template>
 
 <script>
@@ -420,5 +424,19 @@ export default {
   border-radius: 5px;
   padding: 2em;
   margin: 1em;
+}
+
+.curriculum h4 {
+  border: 1px solid #22d49e;
+  border-radius: 5px;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #22d49e;
+  font-weight: 400;
+}
+
+.curriculum a {
+  color: #22d49e;
+  font-weight: 800;
 }
 </style>
