@@ -25,6 +25,16 @@
         />
       </div>
       <div>
+        <h3>Sass</h3>
+        <img
+          src="@/assets/sass-seeklogo.com.svg"
+          alt="sass"
+          class="techno__list__item"
+          width="60"
+          height="60"
+        />
+      </div>
+      <div>
         <h3>Bootstrap</h3>
         <img
           src="@/assets/bootstrap-seeklogo.com.svg"

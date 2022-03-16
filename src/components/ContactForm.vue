@@ -69,7 +69,7 @@ export default {
         "template_rig8f3m",
         this.$refs.form,
         "user_0R2dYz1spFvrq7Cspxv9V", {
-          from_name: name,
+          name: name,
           email: email,
           message: message
         }
