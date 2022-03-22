@@ -316,10 +316,10 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="curriculum">
-    <h4>Pour voir mon CV c'est <a href="https://drive.google.com/file/d/1B1o2ASMaVgv38M973BN23KC9NMdsxdbh/view?usp=sharing">ici</a></h4>
+    
+    <div class="curriculum">
+      <h4><a href="https://drive.google.com/file/d/1B1o2ASMaVgv38M973BN23KC9NMdsxdbh/view?usp=sharing">Pour voir mon CV c'est ici</a></h4>
+    </div>
   </div>
 </template>
 
@@ -365,10 +365,6 @@ export default {
   font-size: small;
 }
 
-.infos {
-  max-width: 90%;
-}
-
 .infos h3 {
   color: #22d49e;
 }
@@ -377,6 +373,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+  max-width: 90%;
 }
 
 .grade__list {

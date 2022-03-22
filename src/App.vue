@@ -37,10 +37,10 @@ export default {
   },
   toggleTheme() {
   const activeTheme = localStorage.getItem("user-theme");
-  if (activeTheme === "dark-theme") {
-    this.setTheme("light-theme");
-  } else {
+  if (activeTheme === "light-theme") {
     this.setTheme("dark-theme");
+  } else {
+    this.setTheme("light-theme");
   }
 },
 getMediaPreference() {
